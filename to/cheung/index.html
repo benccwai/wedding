@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Melody & Ben 2021-05-14</title>
+	<meta name="description" content="Wedding Banquet@EATON HK 香港逸東酒店" />
+    <link rel="stylesheet" href="../letter.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="envelope-wrapper">
+        <div id="envelope" class="close">
+            <div class="front flap"></div>
+            <div class="front pocket"></div>
+            <div class="letter">
+             <h1>To: 阿金晶昌</h1>
+            </div>
+            <div class="hearts">
+                <div class="heart a1"></div>
+                <div class="heart a2"></div>
+                <div class="heart a3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    var envelope = $('#envelope');
+    
+    envelope.click(function() {
+        open();
+        setTimeout(function() {
+            window.location.href="../../night/index.html";
+        },2500)
+    });
+    
+    function open() {
+        envelope.addClass('open')
+            .removeClass('close');
+    }
+    function close() {
+        envelope.addClass('close')
+            .removeClass('open');
+    }
+})
+</script>
+
+</html>
